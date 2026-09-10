@@ -15,14 +15,14 @@ export default function LegacyBanner() {
 
   return (
     <section id="international-desk" className="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="relative rounded-[36px] bg-[#5EC4D1] text-white p-8 sm:p-12 md:p-16 overflow-hidden shadow-xl">
+      <div className="relative rounded-[36px] bg-[#000000] text-white p-8 sm:p-12 md:p-16 overflow-hidden shadow-xl border border-neutral-800">
         {/* Subtle decorative curves */}
-        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/10 blur-2xl pointer-events-none" />
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-black/5 blur-2xl pointer-events-none" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/5 blur-2xl pointer-events-none" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-white/5 blur-2xl pointer-events-none" />
 
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-xs sm:text-sm font-semibold mb-4 text-white">
-            <Globe className="w-4 h-4 text-white" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-xs sm:text-sm font-semibold mb-4 text-[#CFCFD3] border border-white/15">
+            <Globe className="w-4 h-4 text-[#CFCFD3]" />
             <span>Trusted Beyond Borders • International Concierge</span>
           </div>
 
@@ -30,7 +30,7 @@ export default function LegacyBanner() {
             Why Discerning Patients Choose Dr Sahni&apos;s
           </h2>
 
-          <p className="text-base sm:text-lg md:text-xl text-white/95 leading-relaxed font-normal max-w-3xl mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-[#CFCFD3] leading-relaxed font-normal max-w-3xl mb-8">
             At Dr Sahni&apos;s Dental Clinic, patients from across the globe trust us for specialist-led care, transparent digital planning, and technology-driven treatments crafted to be seamless, predictable, and remarkably gentle.
           </p>
 
@@ -39,9 +39,9 @@ export default function LegacyBanner() {
             {highlights.map((item, idx) => (
               <div
                 key={idx}
-                className="flex items-center gap-3 bg-white/15 backdrop-blur-sm px-4 py-3 rounded-2xl border border-white/20 text-xs sm:text-sm font-semibold text-white"
+                className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-2xl border border-white/15 text-xs sm:text-sm font-semibold text-white"
               >
-                <CheckCircle2 className="w-4 h-4 text-white shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#CFCFD3] shrink-0" />
                 <span>{item}</span>
               </div>
             ))}
@@ -49,7 +49,7 @@ export default function LegacyBanner() {
 
           <Link
             href="#book-appointment"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-[#4DB8C4] hover:text-[#5C84D0] font-bold text-base shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-200"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-[#000000] hover:bg-[#FAFAFB] font-bold text-base shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-200 border border-[#CFCFD3]"
           >
             Connect With Dr Sahni&apos;s Global Desk
             <ArrowRight className="w-4 h-4" />

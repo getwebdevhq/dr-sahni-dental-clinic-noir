@@ -64,7 +64,7 @@ export default function RootLayout({
       lang="en"
       className={`${plusJakartaSans.variable} ${cormorantGaramond.variable} scroll-smooth`}
     >
-      <body className="font-sans antialiased text-[#1A1E26] bg-[#FAFBFD] selection:bg-[#4DB8C4]/20 selection:text-[#101D42]">
+      <body className="font-sans antialiased text-[#18181B] bg-[#FAFAFB] selection:bg-[#CFCFD3] selection:text-[#000000]">
         {children}
       </body>
     </html>

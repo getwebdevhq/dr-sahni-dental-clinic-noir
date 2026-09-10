@@ -54,29 +54,29 @@ export default function ReviewsSection() {
   };
 
   return (
-    <section id="reviews" className="py-16 md:py-24 bg-white border-y border-slate-100">
+    <section id="reviews" className="py-16 md:py-24 bg-white border-y border-[#CFCFD3]/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header matching drsahni.netlify.app */}
+        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#4DB8C4] mb-3">
-            <Quote className="w-4 h-4 text-[#4DB8C4]" />
+          <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#8C8889] mb-3">
+            <Quote className="w-4 h-4 text-[#000000]" />
             Patient Stories
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1E2433] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#000000] tracking-tight">
             What Our Patients Say
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-[#64748B]">
+          <p className="mt-3 text-base sm:text-lg text-[#6B6B70]">
             Hear from our global and local patients about their life-changing smile journeys with Dr Sahni&apos;s Dental Clinic.
           </p>
           <div className="flex items-center justify-center gap-2 mt-4">
-            <div className="flex text-amber-400">
+            <div className="flex text-neutral-800">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-amber-400" />
+                <Star key={i} className="w-5 h-5 fill-black text-black" />
               ))}
             </div>
-            <span className="text-sm font-bold text-[#101D42]">4.9 out of 5</span>
-            <span className="text-xs text-[#64748B]">• Over 500+ Verified Reviews</span>
+            <span className="text-sm font-bold text-[#000000]">4.9 out of 5</span>
+            <span className="text-xs text-[#8C8889]">• Over 500+ Verified Reviews</span>
           </div>
         </div>
 
@@ -85,28 +85,28 @@ export default function ReviewsSection() {
           {reviews.slice(0, 3).map((rev, idx) => (
             <div
               key={idx}
-              className="rounded-3xl p-8 bg-[#FAFBFD] border border-slate-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow"
+              className="rounded-3xl p-8 bg-[#FAFAFB] border border-[#CFCFD3]/70 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex text-amber-400">
+                  <div className="flex text-black">
                     {[...Array(rev.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-amber-400" />
+                      <Star key={i} className="w-4 h-4 fill-black text-black" />
                     ))}
                   </div>
-                  <div className="w-6 h-6 rounded-full bg-white shadow-sm border border-slate-100 flex items-center justify-center text-xs font-bold text-blue-600">
+                  <div className="w-6 h-6 rounded-full bg-white shadow-sm border border-[#CFCFD3] flex items-center justify-center text-xs font-bold text-[#000000]">
                     G
                   </div>
                 </div>
 
-                <p className="font-serif-quote italic text-lg text-[#1E2433] leading-relaxed mb-6 font-medium">
+                <p className="font-serif-quote italic text-lg text-[#000000] leading-relaxed mb-6 font-medium">
                   {rev.text}
                 </p>
               </div>
 
-              <div className="border-t border-slate-200/60 pt-4">
-                <p className="font-bold text-[#101D42] text-sm">{rev.author}</p>
-                <p className="text-xs text-[#64748B]">{rev.role}</p>
+              <div className="border-t border-[#CFCFD3]/50 pt-4">
+                <p className="font-bold text-[#000000] text-sm">{rev.author}</p>
+                <p className="text-xs text-[#8C8889]">{rev.role}</p>
               </div>
             </div>
           ))}
@@ -114,29 +114,29 @@ export default function ReviewsSection() {
 
         {/* Reviews Carousel (Mobile & Tablet) */}
         <div className="lg:hidden relative max-w-xl mx-auto">
-          <div className="rounded-3xl p-7 bg-[#FAFBFD] border border-slate-200/80 shadow-md min-h-[280px] flex flex-col justify-between">
+          <div className="rounded-3xl p-7 bg-[#FAFAFB] border border-[#CFCFD3]/70 shadow-md min-h-[280px] flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
-                <div className="flex text-amber-400">
+                <div className="flex text-black">
                   {[...Array(reviews[currentIndex].rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400" />
+                    <Star key={i} className="w-4 h-4 fill-black text-black" />
                   ))}
                 </div>
-                <div className="w-6 h-6 rounded-full bg-white shadow-sm border border-slate-100 flex items-center justify-center text-xs font-bold text-blue-600">
+                <div className="w-6 h-6 rounded-full bg-white shadow-sm border border-[#CFCFD3] flex items-center justify-center text-xs font-bold text-[#000000]">
                   G
                 </div>
               </div>
 
-              <p className="font-serif-quote italic text-base sm:text-lg text-[#1E2433] leading-relaxed mb-6 font-medium">
+              <p className="font-serif-quote italic text-base sm:text-lg text-[#000000] leading-relaxed mb-6 font-medium">
                 {reviews[currentIndex].text}
               </p>
             </div>
 
-            <div className="border-t border-slate-200/60 pt-4">
-              <p className="font-bold text-[#101D42] text-sm">
+            <div className="border-t border-[#CFCFD3]/50 pt-4">
+              <p className="font-bold text-[#000000] text-sm">
                 {reviews[currentIndex].author}
               </p>
-              <p className="text-xs text-[#64748B]">
+              <p className="text-xs text-[#8C8889]">
                 {reviews[currentIndex].role}
               </p>
             </div>
@@ -147,18 +147,18 @@ export default function ReviewsSection() {
             <button
               type="button"
               onClick={prevReview}
-              className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-[#4DB8C4] hover:text-white transition-colors shadow-sm"
+              className="w-10 h-10 rounded-full bg-white border border-[#CFCFD3] flex items-center justify-center text-slate-700 hover:bg-[#000000] hover:text-white transition-colors shadow-sm"
               aria-label="Previous review"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
-            <span className="text-xs font-semibold text-slate-500">
+            <span className="text-xs font-semibold text-[#8C8889]">
               {currentIndex + 1} of {reviews.length}
             </span>
             <button
               type="button"
               onClick={nextReview}
-              className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-[#4DB8C4] hover:text-white transition-colors shadow-sm"
+              className="w-10 h-10 rounded-full bg-white border border-[#CFCFD3] flex items-center justify-center text-slate-700 hover:bg-[#000000] hover:text-white transition-colors shadow-sm"
               aria-label="Next review"
             >
               <ChevronRight className="w-5 h-5" />

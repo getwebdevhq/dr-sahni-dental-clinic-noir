@@ -13,20 +13,20 @@ export default function Footer() {
     <footer className="relative mt-16">
       {/* 1. Top Call To Action Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-        <div className="rounded-[36px] bg-gradient-to-r from-[#6C92D8] to-[#5C84D0] text-white p-10 sm:p-14 md:p-16 text-center shadow-xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="rounded-[36px] bg-gradient-to-r from-[#000000] via-[#161619] to-[#252529] text-white p-10 sm:p-14 md:p-16 text-center shadow-xl relative overflow-hidden border border-neutral-800">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none" />
           
           <div className="relative z-10 max-w-3xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4">
               Ready for a Healthier, Confident Smile?
             </h2>
-            <p className="text-base sm:text-lg text-white/90 font-normal max-w-2xl mx-auto mb-8">
+            <p className="text-base sm:text-lg text-[#CFCFD3] font-normal max-w-2xl mx-auto mb-8">
               Schedule your personalized consultation with Dr. Radhika Sahni and our multidisciplinary faculty. Welcoming domestic patients and international travelers across 30+ nations.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link
                 href="#book-appointment"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-[#5C84D0] hover:bg-slate-50 font-bold text-base shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-[#000000] hover:bg-[#FAFAFB] font-bold text-base shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all border border-[#CFCFD3]"
               >
                 Book Your Consultation
               </Link>
@@ -34,7 +34,7 @@ export default function Footer() {
                 href="https://wa.me/919818465668?text=Hello%20Dr.%20Sahni%27s%20Dental%20Clinic%2C%20I%20would%20like%20to%20inquire%20about%20booking%20an%20appointment."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-base shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
               >
                 <MessageCircle className="w-5 h-5 fill-current" />
                 WhatsApp Us
@@ -44,46 +44,46 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* 2. Main Signature Teal Footer Container */}
-      <div className="bg-[#4DB8C4] text-white pt-16 pb-12">
+      {/* 2. Main Midnight Mist Footer Container */}
+      <div className="bg-[#000000] text-white pt-16 pb-12 border-t border-neutral-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-white/20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-neutral-800">
             
             {/* Col 1: Brand, Rating, Accreditations */}
             <div className="lg:col-span-5 space-y-6">
               {/* Logo */}
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-2xl bg-white p-2 flex items-center justify-center shadow-md shrink-0">
-                  <span className="text-[#4DB8C4] font-serif font-black text-2xl tracking-tighter">DS</span>
+                  <span className="text-[#000000] font-serif font-black text-2xl tracking-tighter">DS</span>
                 </div>
                 <div>
                   <span className="font-serif font-extrabold text-2xl sm:text-3xl tracking-tight text-white block leading-none">
                     Dr Sahni&apos;s
                   </span>
-                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-white/90 block mt-1">
+                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#8C8889] block mt-1">
                     Dental Clinic
                   </span>
                 </div>
               </div>
 
-              <p className="text-sm text-white/90 leading-relaxed max-w-md">
+              <p className="text-sm text-[#CFCFD3] leading-relaxed max-w-md">
                 Led by Dr. Radhika Sahni, our New Delhi clinic brings together prosthodontics, microsurgery, digital implantology, and smile architecture under one roof.
               </p>
 
               {/* Google Rating Badge Card */}
-              <div className="inline-flex items-center gap-4 bg-white rounded-2xl p-4 shadow-sm text-slate-800">
-                <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-xl font-bold text-blue-600">
+              <div className="inline-flex items-center gap-4 bg-[#18181B] rounded-2xl p-4 shadow-sm text-white border border-neutral-800">
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-xl font-bold text-[#000000]">
                   G
                 </div>
                 <div>
-                  <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                  <div className="text-xs font-semibold text-[#8C8889] uppercase tracking-wider">
                     Google Patient Rating
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-2xl font-black text-slate-900 leading-none">4.9</span>
-                    <div className="flex text-amber-400">
+                    <span className="text-2xl font-black text-white leading-none">4.9</span>
+                    <div className="flex text-white">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-amber-400" />
+                        <Star key={i} className="w-4 h-4 fill-white" />
                       ))}
                     </div>
                   </div>
@@ -92,14 +92,14 @@ export default function Footer() {
 
               {/* Accreditation Badges */}
               <div className="flex flex-wrap items-center gap-2 pt-1">
-                <span className="px-3 py-1.5 rounded-lg bg-white/15 text-xs font-bold tracking-wider text-white border border-white/20 flex items-center gap-1.5">
-                  <ShieldCheck className="w-3.5 h-3.5" />
+                <span className="px-3 py-1.5 rounded-lg bg-white/10 text-xs font-bold tracking-wider text-[#CFCFD3] border border-white/15 flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#8C8889]" />
                   ISO 9001:2015 Accredited
                 </span>
-                <span className="px-3 py-1.5 rounded-lg bg-white/15 text-xs font-bold tracking-wider text-white border border-white/20">
+                <span className="px-3 py-1.5 rounded-lg bg-white/10 text-xs font-bold tracking-wider text-[#CFCFD3] border border-white/15">
                   IDA Member
                 </span>
-                <span className="px-3 py-1.5 rounded-lg bg-white/15 text-xs font-bold tracking-wider text-white border border-white/20">
+                <span className="px-3 py-1.5 rounded-lg bg-white/10 text-xs font-bold tracking-wider text-[#CFCFD3] border border-white/15">
                   ICOI Diplomate
                 </span>
               </div>
@@ -110,7 +110,7 @@ export default function Footer() {
               <h4 className="text-base font-bold text-white tracking-wide uppercase">
                 Explore Clinic
               </h4>
-              <ul className="space-y-2.5 text-sm text-white/85">
+              <ul className="space-y-2.5 text-sm text-[#CFCFD3]">
                 <li>
                   <Link href="#about-dr-sahni" className="hover:text-white transition-colors">
                     Dr. Radhika Sahni
@@ -149,7 +149,7 @@ export default function Footer() {
               <h4 className="text-base font-bold text-white tracking-wide uppercase">
                 Specializations
               </h4>
-              <ul className="space-y-2.5 text-sm text-white/85">
+              <ul className="space-y-2.5 text-sm text-[#CFCFD3]">
                 <li>
                   <Link href="#cosmetic-dentistry" className="hover:text-white transition-colors">
                     Cosmetic Veneers
@@ -188,13 +188,13 @@ export default function Footer() {
               <h4 className="text-base font-bold text-white tracking-wide uppercase">
                 New Delhi Clinic
               </h4>
-              <div className="space-y-2 text-sm text-white/90">
+              <div className="space-y-2 text-sm text-[#CFCFD3]">
                 <p className="font-bold text-lg text-white">
                   <a href="tel:+911141627127" className="hover:underline">
                     +91-11-41627127
                   </a>
                 </p>
-                <p className="font-semibold text-white/95">
+                <p className="font-semibold text-white">
                   <a href="tel:+919818465668" className="hover:underline">
                     +91-9818465668
                   </a>
@@ -204,7 +204,7 @@ export default function Footer() {
                     drsahniclinic@gmail.com
                   </a>
                 </p>
-                <div className="pt-2 text-xs leading-relaxed text-white/85">
+                <div className="pt-2 text-xs leading-relaxed text-[#CFCFD3]">
                   <p className="font-semibold text-white">#66, Friends Colony West</p>
                   <p>New Delhi – 110065, India</p>
                   <p className="mt-1">Mon – Sat: 09:00 AM – 08:00 PM (IST)</p>
@@ -229,13 +229,13 @@ export default function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/80">
+          <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8C8889]">
             <div className="flex items-center gap-4">
               <a
                 href="https://www.practo.com/delhi/doctor/dr-radhika-sahni-dentist"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-2.5 py-1 rounded-full bg-white/10 hover:bg-white hover:text-[#4DB8C4] font-semibold text-xs transition-colors"
+                className="px-2.5 py-1 rounded-full bg-white/10 hover:bg-white hover:text-black font-semibold text-xs transition-colors text-white"
                 aria-label="Practo Profile"
               >
                 Practo Profile
@@ -244,7 +244,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white/10 hover:bg-white hover:text-[#4DB8C4] flex items-center justify-center transition-colors"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-colors text-white"
                 aria-label="Instagram"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -255,7 +255,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white/10 hover:bg-white hover:text-[#4DB8C4] flex items-center justify-center transition-colors"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-colors text-white"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -266,7 +266,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white/10 hover:bg-white hover:text-[#4DB8C4] flex items-center justify-center transition-colors"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-colors text-white"
                 aria-label="LinkedIn"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
