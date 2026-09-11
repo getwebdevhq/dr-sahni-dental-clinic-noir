@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Star, MessageCircle, ArrowUp, ShieldCheck } from "lucide-react";
 
 export default function Footer() {
@@ -54,7 +55,13 @@ export default function Footer() {
               {/* Logo */}
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-2xl bg-white p-2 flex items-center justify-center shadow-md shrink-0">
-                  <span className="text-[#000000] font-serif font-black text-2xl tracking-tighter">DS</span>
+                  <Image
+                    src="/images/ds-monogram.png"
+                    alt="Dr Sahni's Dental Clinic Logo"
+                    width={40}
+                    height={30}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <span className="font-serif font-extrabold text-2xl sm:text-3xl tracking-tight text-white block leading-none">
